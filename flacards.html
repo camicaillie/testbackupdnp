@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kartičky na SCIO - Dostaň se na práva!</title>
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Local Fonts -->
+  <link rel="stylesheet" href="./assets/fonts/fonts.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+
+  <style>
+    .pricing-card i {
+      font-size: 2em;
+      margin-bottom: 15px;
+      color: #ff5733;
+    }
+    .pricing-card.featured i {
+      color: white;
+    }
+    
+    /* Spinner animation styles */
+    .loader-spinner {
+      width: 50px;
+      height: 50px;
+      border: 4px solid rgba(255, 87, 51, 0.1);
+      border-radius: 50%;
+      border-top: 4px solid var(--theme-color);
+      margin: 20px auto 0;
+      animation: spin 1.2s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Loading Screen -->
+  <div class="loader-wrapper">
+    <div class="loader-content">
+      <div class="loader-text">
+        <span>D</span>
+        <span>O</span>
+        <span>S</span>
+        <span>T</span>
+        <span>A</span>
+        <span>Ň</span>
+      </div>
+      <div class="loader-text">
+        <span>S</span>
+        <span>E</span>
+      </div>
+      <!-- Added spinning circle loader -->
+      <div class="loader-spinner"></div>
+    </div>
+  </div>
+  
+  <!-- Header -->
+  <header class="header" data-header>
+    <div class="container">
+      <a href="index.html" class="logo">Dostaň se na práva!</a>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li><a href="index.html" class="navbar-link" data-nav-link>Domů</a></li>
+          <li><a href="#flashcards" class="navbar-link" data-nav-link>Karticky</a></li>
+          <li><a href="#contact" class="navbar-link" data-nav-link>Kontakt</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="section hero" id="home" aria-label="hero">
+      <div class="container">
+        <div class="hero-content reveal-left">
+          <p class="section-subtitle">Kartičky na SCIO</p>
+          <h1 class="h1 hero-title">Efektivní příprava na SCIO testy</h1>
+          <p class="section-text">
+            Naše kartičky jsou navrženy tak, aby vám pomohly efektivně se připravit na SCIO testy. 
+            Každá kartička obsahuje klíčové informace a testové otázky z různých oblastí.
+          </p>
+        </div>
+      </div>
+    </section>
+        
+    <section class="section" id="flashcards" aria-label="Ukázkové kartičky">
+      <div class="container">
+        <p class="section-subtitle reveal">Preview</p>
+        <h2 class="h2 section-title reveal delay-1">Ukázkové kartičky</h2>
+        
+        <div class="flashcards-container reveal delay-2">
+          <div class="flashcard" onclick="showFullscreenImage('./assets/images/card1.jpg')">
+            <div class="flashcard-inner" style="font-size: 27px; font-family: 'Poppins', sans-serif;">
+              <i class="fas fa-graduation-cap card-icon"></i>
+              <h3 style="font-size: 30px; font-family: 'Poppins', sans-serif;">Filozofie</h3>
+              <p class="term" style="font-size: 22px; font-family: 'Poppins', sans-serif;">Spor o univerzálie v klasickém období</p>
+              <span class="click-hint" style="font-size: 18px; font-family: 'Poppins', sans-serif;">Klikněte pro zobrazení</span>
+            </div>
+          </div>
+
+          <div class="flashcard" onclick="showFullscreenImage('./assets/images/card2.jpg')">
+            <div class="flashcard-inner" style="font-size: 27px; font-family: 'Poppins', sans-serif;">
+              <i class="fas fa-balance-scale card-icon"></i>
+              <h3 style="font-size: 30px; font-family: 'Poppins', sans-serif;">Právo</h3>
+              <p class="term" style="font-size: 22px; font-family: 'Poppins', sans-serif;">Co je to relativní právo?</p>
+              <span class="click-hint" style="font-size: 18px; font-family: 'Poppins', sans-serif;">Klikněte pro zobrazení</span>
+            </div>
+          </div>
+
+          <div class="flashcard" onclick="showFullscreenImage('./assets/images/card3.jpg')">
+            <div class="flashcard-inner" style="font-size: 27px; font-family: 'Poppins', sans-serif;">
+              <i class="fas fa-balance-scale card-icon"></i>
+              <h3 style="font-size: 30px; font-family: 'Poppins', sans-serif;">Právo</h3>
+              <p class="term" style="font-size: 22px; font-family: 'Poppins', sans-serif;">Co je to absolutní právo?</p>
+              <span class="click-hint" style="font-size: 18px; font-family: 'Poppins', sans-serif;">Klikněte pro zobrazení</span>
+            </div>
+          </div>
+
+          <div class="flashcard" onclick="showFullscreenImage('./assets/images/card4.jpg')">
+            <div class="flashcard-inner" style="font-size: 27px; font-family: 'Poppins', sans-serif;">
+              <i class="fas fa-chart-line card-icon"></i>
+              <h3 style="font-size: 30px; font-family: 'Poppins', sans-serif;">Ekonomie</h3>
+              <p class="term" style="font-size: 22px; font-family: 'Poppins', sans-serif;">Co je to cyklická nezaměstnanost?</p>
+              <span class="click-hint" style="font-size: 18px; font-family: 'Poppins', sans-serif;">Klikněte pro zobrazení</span>
+            </div>
+          </div>
+
+          <div class="flashcard" onclick="showFullscreenImage('./assets/images/card5.jpg')">
+            <div class="flashcard-inner" style="font-size: 27px; font-family: 'Poppins', sans-serif;">
+              <i class="fas fa-clock card-icon"></i>
+              <h3 style="font-size: 30px; font-family: 'Poppins', sans-serif;">Historie</h3>
+              <p class="term" style="font-size: 22px; font-family: 'Poppins', sans-serif;">Jaké vojenské konflikty bezprostředně předcházely 1. světové válce?</p>
+              <span class="click-hint" style="font-size: 18px; font-family: 'Poppins', sans-serif;">Klikněte pro zobrazení</span>
+            </div>
+          </div>
+
+          <div class="flashcard" onclick="showFullscreenImage('./assets/images/card6.jpg')">
+            <div class="flashcard-inner" style="font-size: 27px; font-family: 'Poppins', sans-serif;">
+              <i class="fas fa-chart-line card-icon"></i>
+              <h3 style="font-size: 30px; font-family: 'Poppins', sans-serif;">Ekonomie</h3>
+              <p class="term" style="font-size: 22px; font-family: 'Poppins', sans-serif;">Co je to elasticita poptávky?</p>
+              <span class="click-hint" style="font-size: 18px; font-family: 'Poppins', sans-serif;">Klikněte pro zobrazení</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fullscreen Image Overlay -->
+        <div class="fullscreen-overlay" id="fullscreenOverlay" onclick="hideFullscreenImage()">
+          <img src="" alt="Definice" id="fullscreenImage" />
+          <button class="close-overlay" onclick="hideFullscreenImage()">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing" id="price" aria-label="price">
+      <div class="container">
+        <div class="pricing-header">
+          <h2>CENY PACKŮ</h2>
+        </div>
+        
+        <div class="pricing-wrapper">
+          <div class="pricing-card">
+            <a href="https://buy.stripe.com/aEUg0S6xR72pg6Y4gi">
+              <i class="fas fa-star-half-alt"></i>
+              <h3 class="card-title">Vše potřebné k přípravě</h3>
+              <data class="card-price" value="199">199 ,-</data>
+              <div class="pricing-feature">Základní balíček</div>
+              <div class="pricing-feature">Teoretické kartičky</div>
+              <div class="pricing-feature">Testovací otázky</div>
+              <div class="pricing-feature">Základní podpora</div>
+              <button>Vybrat balíček</button>
+            </a>
+          </div>
+        
+          <div class="pricing-card featured">
+            <a href="https://buy.stripe.com/6oE5me9K33QddYQ5kk">
+              <i class="fas fa-star"></i>
+              <h3 class="card-title">Rapid příprava</h3>
+              <data class="card-price" value="399">399 ,-</data>
+              <div class="pricing-feature">Vše z Basic balíčku</div>
+              <div class="pricing-feature">Rozšířené materiály</div>
+              <div class="pricing-feature">Video lekce</div>
+              <div class="pricing-feature">Prioritní podpora</div>
+              <button>Vybrat balíček</button>
+            </a>
+          </div>
+        
+          <div class="pricing-card">
+            <div class="discount-badge">
+              <span>SLEVA 44%</span>
+            </div>
+            <a href="https://buy.stripe.com/00geWOf4n0E13kcaEF">
+              <i class="fas fa-crown"></i>
+              <h3 class="card-title">Srovnávací příprava</h3>
+              <div class="price-container">
+                <data class="original-price" value="799">799 ,-</data>
+                <data class="card-price discount-price" value="449">449 ,-</data>
+              </div>
+              <div class="countdown-container">
+                <div class="countdown-text">Nabídka končí za:</div>
+                <div class="countdown" id="countdown-timer">
+                  <div class="countdown-item">
+                    <span class="countdown-value" id="countdown-hours">48</span>
+                    <span class="countdown-label">h</span>
+                  </div>
+                  <div class="countdown-item">
+                    <span class="countdown-value" id="countdown-minutes">00</span>
+                    <span class="countdown-label">m</span>
+                  </div>
+                  <div class="countdown-item">
+                    <span class="countdown-value" id="countdown-seconds">00</span>
+                    <span class="countdown-label">s</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pricing-feature">Vše z Rapid balíčku</div>
+              <div class="pricing-feature">VIP materiály</div>
+              <div class="pricing-feature">Osobní konzultace</div>
+              <div class="pricing-feature">24/7 podpora</div>
+              <button>Vybrat balíček</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact" aria-label="contact">
+      <div class="container">
+        <div class="contact-content reveal-left">
+          <p class="section-subtitle">Kontakt</p>
+          <h2 class="h2 section-title">Potřebujete poradit?</h2>
+          <p class="section-text">
+            Máte dotazy ohledně našich kartiček nebo přípravy na SCIO testy? 
+            Neváhejte nás kontaktovat pomocí formuláře níže.
+          </p>
+
+          <ul class="contact-list">
+            <li class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@dostansenaprava.cz" class="contact-link">info@dostansenaprava.cz</a>
+            </li>
+            <li class="contact-item">
+              <i class="fas fa-globe"></i>
+              <a href="https://dostansenaprava.cz/" class="contact-link">www.dostansenaprava.cz</a>
+            </li>
+          </ul>
+        </div>
+
+        <form action="https://formspree.io/f/mjkgkdpg" method="POST" class="contact-form reveal-right">
+          <input type="text" name="name" aria-label="name" placeholder="Vaše jméno" required class="input-field">
+          <input type="email" name="email" aria-label="email" placeholder="Váš email" required class="input-field">
+          <textarea name="message" aria-label="message" placeholder="Vaše zpráva" required class="input-field"></textarea>
+          <button type="submit" class="submit-btn">
+            <span class="span">Odeslat zprávu</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">
+        Tento web je nezávislý a není nijak spojený se společností Scio ani žádnou univerzitou.
+        <br>
+        <a href="pravidla.html" class="copyprav">Pravidla pro vrácení peněz</a>
+        <span class="separator"> | </span>
+        <a href="zasady-ochrany-osobnich-udaju.html" class="copyprav">Zásady ochrany osobních údajů</a>
+      </p>
+      <ul class="social-list">
+        <li>
+          <a href="https://www.instagram.com/dostansenaprava/" class="social-link">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.patreon.com/dostansenaprava" class="social-link">
+            <i class="fab fa-patreon"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js" defer></script>
+</body>
+</html>

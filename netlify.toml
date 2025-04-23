@@ -1,0 +1,3 @@
+[build]
+  functions = "functions"  # Tells Netlify where your functions folder is
+  publish = "."           # Matches your GitHub Pages root (adjust to "docs" if needed)

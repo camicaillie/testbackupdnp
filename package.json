@@ -1,0 +1,24 @@
+{
+  "name": "zsvkarty.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zsvkarty/zsvkarty.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zsvkarty/zsvkarty.github.io/issues"
+  },
+  "homepage": "https://github.com/zsvkarty/zsvkarty.github.io#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.4",
+    "stripe": "^17.7.0"
+  }
+}

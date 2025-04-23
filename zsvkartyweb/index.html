@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dostaň se na práva!</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/question1.png">
+
+  <style>
+    /* Fix for card title text flow */
+    .card-title, .h3.card-title {
+      display: block;
+      white-space: normal !important;
+      word-break: normal !important;
+      overflow: visible !important;
+      width: 100% !important;
+      text-align: left !important;
+      text-wrap: balance;
+      padding: 5px;
+      margin: 0;
+    }
+    
+    .card-content {
+      display: block !important;
+      overflow: visible !important;
+      text-align: left !important;
+    }
+
+    /* Force the paragraph style for card text */
+    .card-title, .h3.card-title {
+      font-size: 18px !important;
+      line-height: 1.5 !important;
+      text-transform: none !important;
+    }
+    
+    /* Remove any flex/grid display that might be causing issues */
+    .card, .card-content, .card-title {
+      display: block !important;
+    }
+
+    /* Remove line breaks in the text */
+    .card-title br:not(:first-child) {
+      display: none;
+    }
+    
+    /* Force the arrows to appear inline */
+    .card-title br + ➡️ {
+      display: inline;
+      margin-left: 5px;
+    }
+  </style>
+
+</head>
+
+<body>
+  
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">Dostaň se i na práva!</a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+
+          <li>
+            <a href="#portfolio" class="navbar-link" data-nav-link>Preview</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link" data-nav-link>Co očekávat?</a>
+          </li>
+
+          <li>
+            <a href="#timeline" class="navbar-link" data-nav-link>Timeline</a>
+          </li>
+
+          <li>
+            <a href="#price" class="navbar-link" data-nav-link>Ceník</a>
+          </li>
+          <li>
+            <a href="https://www.patreon.com/zsvscio" class="navbar-link" data-nav-link>PATREON</a>
+          </li>
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Kontakt</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="hero">
+        <div class="container">
+
+          <figure class="hero-banner img-holder has-before" style="--width: 640; --height: 840;">
+            <img src="./assets/images/question1.png" width="640" height="840" alt="Bernard Smith" class="img-cover">
+          </figure>
+
+          <div class="hero-content">
+           
+            <p class="section-subtitle">Kartičky pro přípravu na Scio test ze ZSV </p>
+
+            <h1 class="h1 hero-title main-heading">Nauč se na SCIA bez stresu a zábavně</h1>
+
+            <ul class="hero-list">
+
+              <li>
+                <a href="https://www.patreon.com/zsvscio" class="list-link">
+                  <span class="span">PATREON</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </li>
+
+              
+
+              
+
+            </ul>
+
+            <ul class="exp-list">
+
+              <li class="list-item">
+                <strong class="strong">90.0+</strong>
+
+                <span class="span">
+                  Percentil<br>
+                  ze ZSV
+                </span>
+              </li>
+
+              <li class="list-item">
+                <strong class="strong">900+</strong>
+
+                <span class="span">
+                  Přípravných<br>
+                  otázek
+                </span>
+              </li>
+
+              
+
+            </ul>
+
+            <li>
+              <div class="notice-box">
+                <ion-icon name="alert-circle-outline"></ion-icon>Nejsme nijak spojení se společností Scio.
+              </div>
+            </li>
+            <a href="#portfolio" class="slide-down-btn" aria-label="scroll down">
+              <ion-icon name="arrow-down" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PORTFOLIO
+      -->
+
+      <section class="section portfolio" id="portfolio" aria-label="portfolio">
+        <div class="container">
+
+          <p class="section-subtitle">Kartičky na ZSV</p>
+
+          <h2 class="h2 section-title">Preview našich kartiček</h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="card">
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
+                  <img src="./assets/images/swipe1t.png" width="600" height="675" loading="lazy" alt="Magic Art"
+                    class="img-cover">
+                </figure>
+
+                <a href="#portfolio" class="card-content">
+
+                 
+
+                  <h3 class="h3 card-title">Vyzkoušej si jak naše teoretické, tak naše testovací kartičky
+
+                  </h3>
+
+                  
+
+                </a>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="card">
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
+                  <img src="./assets/images/swipe2.png" width="600" height="675" loading="lazy" alt="Bona Green"
+                    class="img-cover">
+                </figure>
+
+                <a href="#portfolio" class="card-content">
+                  <h3 class="h3 card-title">
+                    Sv. Augustýn říkal, že je možné poznávat pouze skrze Boha. ➡️ Inspirace Platónem a světem ideí. Tomáš Akvinský říkal, že rozum je nezávislý na osvícení. ➡️ Zdrojem poznání jsou smysly (inspirace Aristotelem).
+                  </h3>
+                </a>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="card">
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
+                  <img src="./assets/images/swipe3.png" width="600" height="675" loading="lazy" alt="Leo Dandora"
+                    class="img-cover">
+                </figure>
+
+                <a href="#portfolio" class="card-content">
+
+                     <!--  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>    -->
+
+                  <h3 class="h3 card-title">b) Sv.Augustýn</h3>
+
+                  
+
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+          <div class="buy-button-container">
+            <a href="flacards.html" target="_blank" class="click-button">
+              Náhled dalších kartiček 
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="section skills has-before" id="skills" aria-label="skills"
+        style="background-image: url('./assets/images/skills-bg.png')">
+        <div class="container">
+
+          <div class="skills-content">
+
+            <p class="section-subtitle">Dovednosti</p>
+
+            <h2 class="h2 section-title">Co se naučíš?</h2>
+
+            <p class="section-text">
+              Potřebuješ se naučit efektivně a rychle ZSV na Scio testy?
+              Tak to jsi na správném místě! S náma Scia zvládneš bez problému a zároveň to nebude žádná otrava,
+              ale hlavně ZSV budeš znát jako svoje boty.
+            </p>
+
+            <ul class="skills-list">
+
+              <li class="skills-item">
+                <div class="wrapper">
+                  <h3 class="skill-title">ČLOVĚK A OSOBNOST</h3>
+
+                  <data class="skill-value" value="100%">100%</data>
+                </div>
+
+                <div class="progress-box">
+                  <div class="progress" style="width: 100%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="wrapper">
+                  <h3 class="skill-title">STÁT A SPOLEČNOST</h3>
+
+                  <data class="skill-value" value="100%">100%</data>
+                </div>
+
+                <div class="progress-box">
+                  <div class="progress" style="width: 100%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="wrapper">
+                  <h3 class="skill-title">HOSPODÁŘSTVÍ A SVĚT</h3>
+
+                  <data class="skill-value" value="100%">100%</data>
+                </div>
+
+                <div class="progress-box">
+                  <div class="progress" style="width: 100%"></div>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="skills-banner has-before"></div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TIMELINE
+      -->
+
+      <section class="section timeline" id="timeline" aria-label="timeline">
+        <div class="container">
+
+          <p class="section-subtitle">Timeline</p>
+
+          <h2 class="h2 section-title">Časová osa studia</h2>
+
+          <ul class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h3 class="item-title">1) INSTRUKCE A ÚVOD: </h3>
+
+              <p class="item-address">Poradíme ti jak se nejvíc efektivně učit a na co se zaměřit</p>
+
+              <p class="item-period">30 MINUT - 1 HODINA</p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h3 class="item-title">2) SEZNÁMENÍ S KAŽDÝM TÉMATEM </h3>
+
+              <p class="item-address">Stručně a jasně ti vysvětlíme všechny kapitoly, které scio chce od tebe vědět</p>
+
+              <p class="item-period">25 HODIN - 30 HODIN</p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h3 class="item-title">3) TESTOVANÍ ZNALOSTÍ</h3>
+
+              <p class="item-address">Máme pro tebe připravených mnoho otázek, které ti prohloubí znalost
+                v různých tématech SCIO testu.</p>
+
+              <p class="item-period">10 HODIN - 15 HODIN
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h3 class="item-title">4) OPAKOVÁNÍ</h3>
+
+              <p class="item-address">Zopakuješ témata, které ti při testování tvých znalostí nešly.</p>
+
+              <p class="item-period">10 HODIN - 15 HODIN</p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h3 class="item-title">5) PŘEDTESTOVÁ REVIZE</h3>
+
+              <p class="item-address">Jedeš metrem psát test a nebo máš stres, že si nejsi něčím jistý?
+                Neboj, máme pro tebe předtestové opáčko, abys byl víc seběvědomý, když ho budeš psát.
+              </p>
+
+              <p class="item-period">30 MINUT - 1 HODINA</p>
+
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PRICING
+      -->
+
+      <section class="section pricing" id="price" aria-label="price">
+        <div class="container">
+
+          <div class="pricing-content">
+
+            <p class="section-subtitle">Ceník</p>
+
+            <h2 class="h2 section-title">Ceny packů</h2>
+
+            <p class="section-text">
+              Z nabízených packů si můžete vybrat až 3 různé možnosti, jak efektivně
+              se chcete učit. Čím vyšší tier tím víc studijních materiálů.
+            </p>
+
+          </div>
+
+          <ul class="pricing-list">
+
+            <li>
+              <a href="https://www.patreon.com/zsvscio/shop/vse-potrebne-k-priprave-800922?source=storefront">
+                <div class="pricing-card">
+                  <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  <h3 class="card-title">Vše potřebné k přípravě</h3>
+                  <data class="card-price" value="500">199 ,- </data>
+                </div>
+              </a>
+            </li>
+          
+            <li>
+              <a href="https://www.patreon.com/zsvscio/shop/rapidni-priprava-801041?source=storefront">
+                <div class="pricing-card">
+                  <ion-icon name="star-half-outline" aria-hidden="true"></ion-icon>
+                  <h3 class="card-title">Rapid příprava</h3>
+                  <data class="card-price" value="400">249 ,-</data>
+                </div>
+              </a>
+            </li>
+          
+            <li>
+              <a href="https://www.patreon.com/zsvscio">
+                <div class="pricing-card">
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <h3 class="card-title">Srovnávací příprava</h3>
+                  <data class="card-price" value="300">699 ,-</data>
+                </div>
+              </a>
+            </li>
+          
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #NEWS
+     -->
+
+      <section class="section news" id="news" aria-label="news">
+        <div class="container">
+
+          <p class="section-subtitle">Podmínky vrácení peněz</p>
+
+          <h2 class="h2 section-title">100% garance vrácení peněz</h2>
+
+          <h3 class="card-title">  Všechen risk bereme na sebe! Tak moc jsme si jistí, že s pomocí našich kartičkek u scia uspějete.
+            <br>
+            Pokud vám kartičky nepomohou a nedostanete se na svou vysněnou školu, tak vám vrátíme vaše peníze.
+            <br><br>  
+            Pravidla, jak si zažádat o vrácení peněz, najdete kliknutím na fajfku <a href="pravidla.html">✔️</a>
+          </h3>  
+          </div>
+      </section>
+
+
+
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" id="contact" aria-label="contact">
+        <div class="container">
+
+          <div class="contact-content">
+
+            <p class="section-subtitle">Kontakt</p>
+
+            <h2 class="h2 section-title">Potřebuješ s něčím poradit?</h2>
+
+            <p class="section-text">
+              Pro kontakt s námi prosím vyplňte formulář v této sekci. 
+              Nezapomeňte vyplnit svůj e-mail a jméno.
+            </p>
+
+            <ul class="contact-list">
+
+
+
+        
+
+              <li class="contact-item">
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+                <a href="mailto:info@dostansenaprava.cz" class="contact-link">info@dostansenaprava.cz</a>
+              </li>
+
+              <li class="contact-item">
+                <ion-icon name="globe-outline" aria-hidden="true"></ion-icon>
+
+                <a href="https://dostansenaprava.cz/" class="contact-link">www.dostansenaprava.cz</a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <form action="https://formspree.io/f/mjkgkdpg" method="POST" class="contact-form">
+            <input type="text" name="name" aria-label="name" placeholder="Jméno" required class="input-field">
+            <input type="email" name="email" aria-label="email" placeholder="Email" required class="input-field">
+            <textarea name="message" aria-label="message" placeholder="Zpráva" required class="input-field"></textarea>
+            <button type="submit" class="submit-btn">
+              <span class="span">Submit</span>
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        Tento web je nezávislý a není nijak spojený se společností Scio ani žádnou univerzitou.
+        <br>
+        <a href="pravidla.html" class="copyprav">Pravidla pro vrácení peněz</a>
+      </p>
+
+      <ul class="social-list">
+
+        <li>
+          <a href="https://www.instagram.com/sciokarticky/" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.patreon.com/zsvscio" class="logo1">Patreon</a>
+
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

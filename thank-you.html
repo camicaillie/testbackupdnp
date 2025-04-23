@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Děkujeme za nákup | Dostaň se na práva</title>
+  <meta name="title" content="Děkujeme za nákup | Dostaň se na práva">
+  <meta name="description" content="Děkujeme za zakoupení našich materiálů k přípravě na SCIO testy. Zde najdete informace, jak začít s přípravou na právnickou fakultu.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dostansenaprava.cz/thank-you.html">
+  <meta property="og:title" content="Děkujeme za nákup | Dostaň se na práva">
+  <meta property="og:description" content="Děkujeme za zakoupení našich materiálů k přípravě na SCIO testy. Zde najdete informace, jak začít s přípravou na právnickou fakultu.">
+  <meta property="og:image" content="./assets/images/question1.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://dostansenaprava.cz/thank-you.html">
+  <meta property="twitter:title" content="Děkujeme za nákup | Dostaň se na práva">
+  <meta property="twitter:description" content="Děkujeme za zakoupení našich materiálů k přípravě na SCIO testy. Zde najdete informace, jak začít s přípravou na právnickou fakultu.">
+  <meta property="twitter:image" content="./assets/images/question1.png">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+
+  <!-- Google Tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-56S6P68QS8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-56S6P68QS8');
+    
+    // Conversion tracking
+    gtag('event', 'purchase_complete', {
+      'event_category': 'ecommerce',
+      'event_label': 'Purchase completed'
+    });
+  </script>
+
+  <style>
+    .thank-you-section {
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .thank-you-section::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 30%;
+      height: 100%;
+      background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3z' fill='%23ff3c1a' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+      opacity: 0.7;
+      z-index: 0;
+    }
+    
+    .thank-you-container {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    
+    .success-icon {
+      width: 120px;
+      height: 120px;
+      background-color: hsl(10, 100%, 57%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 30px;
+    }
+    
+    .success-icon i {
+      font-size: 60px;
+      color: white;
+    }
+    
+    .thank-you-title {
+      font-size: 3rem;
+      color: #1a1a3f;
+      margin-bottom: 20px;
+    }
+    
+    .thank-you-subtitle {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 40px;
+    }
+    
+    .order-details {
+      background-color: white;
+      border-radius: 16px;
+      padding: 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      text-align: left;
+    }
+    
+    .order-details h3 {
+      font-size: 1.5rem;
+      color: #1a1a3f;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    .steps-container {
+      margin-top: 50px;
+    }
+    
+    .step-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      background-color: white;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+      text-align: left;
+      border: 1px solid rgba(255, 60, 26, 0.1);
+    }
+    
+    .step-number {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: hsl(10, 100%, 57%);
+      color: white;
+      font-weight: 700;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .step-content h4 {
+      font-size: 1.3rem;
+      color: #1a1a3f;
+      margin-bottom: 10px;
+    }
+    
+    .step-content p {
+      font-size: 1.1rem;
+      color: #4a4a6a;
+      line-height: 1.5;
+    }
+    
+    .cta-buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 50px;
+      flex-wrap: wrap;
+    }
+    
+    .btn {
+      padding: 16px 32px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 1.2rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s ease;
+    }
+    
+    .btn-primary {
+      background-color: hsl(10, 100%, 57%);
+      color: white;
+      box-shadow: 0 8px 20px rgba(255, 60, 26, 0.25);
+    }
+    
+    .btn-primary:hover {
+      background-color: hsl(15, 100%, 60%);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 25px rgba(255, 60, 26, 0.35);
+    }
+    
+    .btn-secondary {
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #1a1a3f;
+      border: 1px solid rgba(26, 26, 63, 0.1);
+    }
+    
+    .btn-secondary:hover {
+      background-color: rgba(255, 255, 255, 1);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+    }
+    
+    @media (max-width: 768px) {
+      .thank-you-section {
+        padding: 60px 0;
+      }
+      
+      .thank-you-title {
+        font-size: 2.3rem;
+      }
+      
+      .thank-you-subtitle {
+        font-size: 1.3rem;
+      }
+      
+      .order-details {
+        padding: 25px;
+      }
+      
+      .step-item {
+        padding: 20px;
+      }
+      
+      .cta-buttons {
+        flex-direction: column;
+      }
+      
+      .btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header" data-header>
+    <div class="container">
+      <a href="index.html" class="logo">Dostaň se na práva!</a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li>
+            <a href="index.html#portfolio" class="navbar-link" data-nav-link>Preview</a>
+          </li>
+
+          <li>
+            <a href="index.html#skills" class="navbar-link" data-nav-link>Co očekávat?</a>
+          </li>
+
+          <li>
+            <a href="index.html#timeline" class="navbar-link" data-nav-link>Timeline</a>
+          </li>
+
+          <li>
+            <a href="index.html#price" class="navbar-link" data-nav-link>Ceník</a>
+          </li>
+
+          <li>
+            <a href="blog.html" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+          
+          <li>
+            <a href="index.html#contact" class="navbar-link" data-nav-link>Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="thank-you-section">
+      <div class="thank-you-container">
+        <div class="success-icon">
+          <i class="fas fa-check"></i>
+        </div>
+        
+        <h1 class="thank-you-title">Děkujeme za Váš nákup!</h1>
+        <p class="thank-you-subtitle">Vaše objednávka byla úspěšně dokončena.</p>
+        
+        <div class="order-details">
+          <h3>Detaily objednávky</h3>
+          <p>Na e-mail, který jste zadali při platbě, jsme vám poslali odkaz ke stažení materiálů a další detaily k vaší objednávce.</p>
+          <p>Pokud e-mail do 15 minut nedorazí, zkontrolujte složku se spamem nebo nás kontaktujte na <a href="mailto:info@dostansenaprava.cz">info@dostansenaprava.cz</a></p>
+        </div>
+        
+        <div class="steps-container">
+          <h2>Co dál?</h2>
+          
+          <div class="step-item">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4>Zkontrolujte e-mail</h4>
+              <p>Přečtěte si instrukce a stáhněte si zakoupené materiály z e-mailu, který jsme vám právě odeslali.</p>
+            </div>
+          </div>
+          
+          <div class="step-item">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4>Začněte se učit</h4>
+              <p>Následujte naši doporučenou studijní cestu pro nejlepší výsledky. Začněte s teoretickými kartičkami a postupně přejděte k testovacím otázkám.</p>
+            </div>
+          </div>
+          
+          <div class="step-item">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4>Máte otázky?</h4>
+              <p>Jsme tu pro vás! Neváhejte nás kontaktovat, pokud budete potřebovat jakoukoliv pomoc nebo radu k přípravě.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="cta-buttons">
+          <a href="index.html" class="btn btn-secondary">
+            <i class="fas fa-home"></i>
+            <span>Zpět na hlavní stránku</span>
+          </a>
+          
+          <a href="blog.html" class="btn btn-primary">
+            <i class="fas fa-book"></i>
+            <span>Přečíst náš blog s tipy</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">
+        Tento web je nezávislý a není nijak spojený se společností Scio ani žádnou univerzitou.
+        <br>
+        <a href="pravidla.html" class="copyprav">Pravidla pro vrácení peněz</a>
+      </p>
+
+      <ul class="social-list">
+        <li>
+          <a href="https://www.instagram.com/dostansenaprava/" class="social-link">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="./assets/js/script.js" defer></script>
+</body>
+
+</html> 
