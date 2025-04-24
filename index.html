@@ -2263,9 +2263,142 @@
         </div>
       </section>
 
+      <!-- 
+        - #REVIEWS
+      -->
 
-
-
+      <section class="section reviews" id="reviews" aria-label="reviews">
+        <div class="container">
+          <div class="reviews-header">
+            <h2>RECENZE</h2>
+            <p class="section-text">Co o nás říkají studenti</p>
+          </div>
+          
+          <div class="reviews-container modern-reviews">
+            <!-- Left Side - Overall Rating and Rating Breakdown -->
+            <div class="reviews-summary">
+              <div class="overall-rating">
+                <h3 class="overall-rating-value">4.0</h3>
+                <div class="star-display">
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="rating-count"><span id="reviewCount">35k</span> hodnocení</p>
+              </div>
+              
+              <div class="rating-breakdown">
+                <div class="rating-row">
+                  <span class="rating-label">5.0</span>
+                  <div class="rating-bar-container">
+                    <div class="rating-bar" style="width: 75%"></div>
+                  </div>
+                  <span class="rating-count-small">15k recenzí</span>
+                </div>
+                <div class="rating-row">
+                  <span class="rating-label">4.0</span>
+                  <div class="rating-bar-container">
+                    <div class="rating-bar" style="width: 60%"></div>
+                  </div>
+                  <span class="rating-count-small">8k recenzí</span>
+                </div>
+                <div class="rating-row">
+                  <span class="rating-label">3.0</span>
+                  <div class="rating-bar-container">
+                    <div class="rating-bar" style="width: 45%"></div>
+                  </div>
+                  <span class="rating-count-small">7k recenzí</span>
+                </div>
+                <div class="rating-row">
+                  <span class="rating-label">2.0</span>
+                  <div class="rating-bar-container">
+                    <div class="rating-bar" style="width: 25%"></div>
+                  </div>
+                  <span class="rating-count-small">3k recenzí</span>
+                </div>
+                <div class="rating-row">
+                  <span class="rating-label">1.0</span>
+                  <div class="rating-bar-container">
+                    <div class="rating-bar" style="width: 15%"></div>
+                  </div>
+                  <span class="rating-count-small">2k recenzí</span>
+                </div>
+              </div>
+              
+              <!-- Category ratings removed as requested -->
+            </div>
+            
+            <!-- Right Side - Individual Reviews -->
+            <div class="reviews-list">
+              <!-- Reviews will be loaded here from Firebase -->
+              
+              <!-- Add Review -->
+              <div class="add-review-button" onclick="document.getElementById('reviewModalOverlay').style.display = 'block'; document.getElementById('reviewFormContainer').style.display = 'block'; document.getElementById('reviewForm').reset(); document.querySelectorAll('.rating-star').forEach(s => s.classList.remove('active', 'hover')); document.getElementById('reviewRating').value = 0;">
+                <i class="fas fa-plus"></i>
+                <span>Přidat recenzi</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Modal overlay for the review form -->
+          <div id="reviewModalOverlay" class="modal-overlay" style="display: none;"></div>
+          
+          <!-- Review Form (hidden by default, will be shown as popup) -->
+          <div class="review-form-container modern-form" id="reviewFormContainer" style="display: none;">
+            <div class="form-header">
+              <h3>Přidat recenzi</h3>
+              <button type="button" class="close-form" id="closeReviewForm">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <form id="reviewForm" class="review-form">
+              <div class="form-group">
+                <label for="reviewName">Jméno</label>
+                <input type="text" id="reviewName" name="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="reviewProduct">Koupí produkt</label>
+                <div class="product-options">
+                  <label class="product-option">
+                    <input type="radio" name="product" value="Studijní kartičky" required>
+                    <span class="product-name">Studijní kartičky</span>
+                  </label>
+                  <label class="product-option">
+                    <input type="radio" name="product" value="Rapid příprava">
+                    <span class="product-name">Rapid příprava</span>
+                  </label>
+                  <label class="product-option">
+                    <input type="radio" name="product" value="Srovnávací příprava">
+                    <span class="product-name">Srovnávací příprava</span>
+                  </label>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="reviewRating">Hodnocení</label>
+                <div class="star-rating">
+                  <i class="fas fa-star rating-star" data-rating="1"></i>
+                  <i class="fas fa-star rating-star" data-rating="2"></i>
+                  <i class="fas fa-star rating-star" data-rating="3"></i>
+                  <i class="fas fa-star rating-star" data-rating="4"></i>
+                  <i class="fas fa-star rating-star" data-rating="5"></i>
+                  <input type="hidden" id="reviewRating" name="rating" value="0" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="reviewText">Recenze</label>
+                <textarea id="reviewText" name="text" rows="4" required></textarea>
+              </div>
+              
+              <button type="submit" class="submit-review">Odeslat recenzi</button>
+            </form>
+          </div>
+        </div>
+      </section>
 
       <!-- 
         - #TIMELINE
@@ -2401,66 +2534,6 @@
                 <div class="pricing-feature">24/7 podpora</div>
                 <button>Vybrat balíček</button>
               </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 
-        - #REVIEWS
-      -->
-
-      <section class="section reviews" id="reviews" aria-label="reviews">
-        <div class="container">
-          <div class="reviews-header">
-            <h2>RECENZE</h2>
-            <p class="section-text">Co o nás říkají studenti</p>
-          </div>
-          
-          <div class="reviews-container">
-            <div class="reviews-display">
-              <div class="reviews-grid" id="reviewsGrid">
-                <!-- Reviews will be loaded here from Firebase -->
-                <div class="review-card skeleton">
-                  <div class="skeleton-rating"></div>
-                  <div class="skeleton-text"></div>
-                  <div class="skeleton-author"></div>
-                </div>
-                <div class="review-card skeleton">
-                  <div class="skeleton-rating"></div>
-                  <div class="skeleton-text"></div>
-                  <div class="skeleton-author"></div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="review-form-container">
-              <h3>Přidat recenzi</h3>
-              <form id="reviewForm" class="review-form">
-                <div class="form-group">
-                  <label for="reviewName">Jméno</label>
-                  <input type="text" id="reviewName" name="name" required>
-                </div>
-                
-                <div class="form-group">
-                  <label for="reviewRating">Hodnocení</label>
-                  <div class="star-rating">
-                    <i class="fas fa-star rating-star" data-rating="1"></i>
-                    <i class="fas fa-star rating-star" data-rating="2"></i>
-                    <i class="fas fa-star rating-star" data-rating="3"></i>
-                    <i class="fas fa-star rating-star" data-rating="4"></i>
-                    <i class="fas fa-star rating-star" data-rating="5"></i>
-                    <input type="hidden" id="reviewRating" name="rating" value="0" required>
-                  </div>
-                </div>
-                
-                <div class="form-group">
-                  <label for="reviewText">Recenze</label>
-                  <textarea id="reviewText" name="text" rows="4" required></textarea>
-                </div>
-                
-                <button type="submit" class="submit-review">Odeslat recenzi</button>
-              </form>
             </div>
           </div>
         </div>
